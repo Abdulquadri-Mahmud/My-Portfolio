@@ -1,0 +1,113 @@
+.project-header{
+    padding-top: 5rem;
+    width: 100%;
+}
+.project-header h1{
+    color: var(--color-1);
+    text-align: center;
+    font-size:2.4rem;
+    text-transform: capitalize;
+}
+.project-header h1 span{
+    color: var(--color-3);
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+.color-code,.multiplicattion-table {
+    width: 45%;
+    height:33rem;
+    border-radius: 20px;
+    margin: 2vh;
+    background-color:rgba(54, 52, 52, 0.6);
+    padding: 2rem;
+}
+.color-code .img,.multiplicattion-table .img{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.color-code h1,.multiplicattion-table h1{
+    color: var(--color-1);
+    text-align: center;
+}
+.color-code img,.multiplicattion-table img{
+    max-width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+.color-code p,.multiplicattion-table p{
+    padding-top: 1rem;
+    color: var(--color-1);
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media screen and (max-width:680px) {
+    .projects{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        width: 100%;
+    }
+    .color-code,.multiplicattion-table {
+        width: 90%;
+        padding: 10px;
+        height: 32rem;
+        width: 90%;
+        background-color:rgba(54, 52, 52, 0.6);
+        border-radius: 15px;
+        padding: 2rem;
+    }
+    .color-code .img,.multiplicattion-table .img{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .color-code h1,.multiplicattion-table h1{
+        color: var(--color-1);
+        text-align: center;
+    }
+    .color-code img,.multiplicattion-table img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .color-code p,.multiplicattion-table p{
+        color: var(--color-1);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:360px) {
+    .color-code,.multiplicattion-table {
+        width: 90%;
+        padding: 10px;
+        height: 34rem;
+        width: 90%;
+        background-color:rgba(54, 52, 52, 0.6);
+        border-radius: 15px;
+        padding: 2rem;
+    }
+    .color-code .img,.multiplicattion-table .img{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .color-code h1,.multiplicattion-table h1{
+        color: var(--color-1);
+        text-align: center;
+    }
+    .color-code img,.multiplicattion-table img{
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .color-code p,.multiplicattion-table p{
+        color: var(--color-1);
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

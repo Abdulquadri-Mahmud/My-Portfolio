@@ -1,0 +1,125 @@
+:root{
+    --background-color:#000000;
+    --color-1: #dde1e7;
+    --color-2: rgba(0,0,0,0.9);
+    --color-3: rgb(131, 7, 44);
+}
+.skills-header{
+    padding-top: 5rem;
+    width: 100%;
+}
+.skills-header h1{
+    color: var(--color-1);
+    text-align: center;
+    font-size:2.4rem;
+    text-transform: capitalize;
+}
+.skills-header h1 span{
+    color: var(--color-3);
+}
+.web-des-web-dev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 2rem;
+}
+.web-design,.web-dev {
+    width: 45%;
+    height:33rem;
+    border-radius: 20px;
+    margin: 2vh;
+    background-color:rgba(54, 52, 52, 0.6);
+    padding: 2rem;
+}
+.web-design-header h1,.web-dev-header h1{
+    text-align: center;
+    color: var(--color-1);
+    font-size:2rem;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vh;
+}
+.box1 h2{
+    color: var(--color-1);
+    text-align: center;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2vh;
+}
+.box2 h2{
+    color: var(--color-1);
+    text-align: center;
+}
+
+.box1 img{
+    width: 120px;
+}
+.box2 img{
+    width: 120px;
+    padding-top:1rem;
+}
+@media screen and (max-width:680px) {
+    .web-des-web-dev{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        margin-top: 2rem;
+    }
+    .web-design,.web-dev {
+        width: 90%;
+        height:33rem;
+        border-radius: 20px;
+        margin: 2vh;
+        background-color:rgba(54, 52, 52, 0.6);
+        padding: 2rem;
+    }
+    .web-design-header h1,.web-dev-header h1{
+        text-align: center;
+        color: var(--color-1);
+        font-size:2rem;
+    }
+    .box1{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 4vh;
+    }
+    .box1 h2{
+        color: var(--color-1);
+        text-align: center;
+    }
+    .box2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:2vh;
+    }
+    .box2 h2{
+        color: var(--color-1);
+        text-align: center;
+    }
+    
+    .box1 img{
+        width: 120px;
+    }
+    .box2 img{
+        width: 120px;
+        padding-top:1rem;
+    }
+}
+@media  screen and (max-width:360px) {
+    .web-design,.web-dev {
+        width: 90%;
+        height:34rem;
+        border-radius: 20px;
+        margin: 2vh;
+        background-color:rgba(54, 52, 52, 0.6);
+        padding: 2rem;
+    }
+}

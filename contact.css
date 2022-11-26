@@ -1,0 +1,344 @@
+:root{
+    --background-color:#000000;
+    --color-1: #dde1e7;
+    --color-2: rgba(0,0,0,0.9);
+    --color-3: rgb(131, 7, 44);
+}
+.contact{
+    padding: 40px 0px 80px;
+    background-image:url(download\ \(2\).png);
+    background-repeat: no-repeat;
+    background-color:rgba(0,0,0,0.9);
+    background-position: center;
+    background-size: contain;
+    background-blend-mode: soft-light;
+    color: var(--color-1);
+}
+.contact-header{
+    padding-top: 5rem;
+    width: 100%;
+}
+.contact-header h1{
+    color: var(--color-1);
+    text-align: center;
+    font-size:2.4rem;
+    text-transform: capitalize;
+}
+.contact-header h1 span{
+    color: var(--color-3);
+}
+.contact-header p{
+    text-align: center;
+    padding-top: 0.7rem;
+    font-size: 1.4rem;
+}
+.contact-me{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.email-contact,.social-contact{
+    height: 30rem;
+    width: 45%;
+    background-color:rgba(54, 52, 52, 0.6);
+    padding: 1rem;
+  }
+  .email-contact{
+    margin-right: 1rem;
+    display: grid;
+    place-content: center;
+  }
+  .email-contact,.social-contact{
+    margin:auto;
+  }
+  input{
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--color-2);
+    color: var(--color);
+    font-size:1.2rem;
+    font-weight:600;
+  }
+  input.name{
+    margin-top: 1rem;
+  }
+  input.email{
+    margin-top: 2rem;
+  }
+  input::placeholder{
+    color: rgb(179, 176, 176);
+    text-align: start;
+    padding: 6px;
+  }
+  textarea{
+    margin-top: 2rem;
+    height: 10rem;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--color-2);
+    color: var(--color);
+    font-size:1.2rem;
+    font-weight:600;
+  }
+  textarea::placeholder{
+    color: rgb(179, 176, 176);
+    text-align: start;
+    padding: 6px;
+    font-size:1.3rem;
+    font-weight: 900;
+  }
+
+  button{
+    margin-top: 1rem;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: var(--color-2);
+    color: var(--color);
+    font-size:1.3rem;
+    font-weight:700;
+  }
+  .social-contact .number{
+    margin-top: 2.2rem;
+    color: var(--color);
+  }
+  .number h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-decoration: var(--color-2) underline;
+  }
+  .number p{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    padding-top: 0.4rem;
+  }
+  .social-contact .social-media{
+    color: var(--color);
+  }
+  .social-contact .social-media h1{
+    padding: 2rem 0rem 0rem;
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-transform: capitalize;
+  }
+  .social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .social-contact .social-media a{
+    text-decoration: none;
+    color: var(--color);
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0.5rem;
+    transition: all 0.4s;
+  }.social-contact .social-media a:hover{
+    color: var(--color-2);
+    transform: translateY(4px);
+  }
+  .deco{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .p1{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-1);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }.p1::after{
+    content: '';
+    position: absolute;
+    top: 3rem;
+    width: 70px;
+    height: 70px;
+    background-color: var(--color);
+    border-radius: 50%;
+    animation:animate 2s ease-in-out alternate infinite;
+  }
+  .p2{
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-1);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }.p2::after{
+    content: '';
+    position: absolute;
+    top: 3rem;
+    width: 70px;
+    height: 70px;
+    background-color: var(--color-1);
+    border-radius: 50%;
+    animation:animate 2s ease-in-out alternate infinite;
+  }
+  @keyframes animate {
+    0%{
+      background-color: var(--color-1);
+    }100%{
+      background-color: var(--color-2);
+    }
+  }
+
+  @media screen and (max-width:680px) {
+    .contact{
+      padding: 40px 0px 0px;
+      background-image:url(download\ \(2\).png);
+      background-repeat: no-repeat;
+      background-color:rgba(0,0,0,0.9);
+      background-position: center;
+      background-size: contain;
+      background-blend-mode: soft-light;
+      color: var(--color-1);
+  }
+  .contact-header{
+      padding-top: 5rem;
+      width: 100%;
+  }
+  .contact-me{
+    display: grid;
+    place-content: center;
+  }
+      .email-contact{
+        height: 30rem;
+        width: 90%;
+        background-color:rgba(54, 52, 52, 0.6);
+        padding: 1rem;
+        border-radius: 15px;
+      }
+      .email-contact{
+        display: grid;
+        place-content: center;
+      }
+      input{
+        height: 35px;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: var(--color-2);
+        color: var(--color);
+        font-size:1.2rem;
+        font-weight:600;
+      }
+      input.name{
+        margin-top: 1rem;
+      }
+      input.email{
+        margin-top: 2rem;
+      }
+      input::placeholder{
+        color: rgb(179, 176, 176);
+        text-align: start;
+        padding: 6px;
+      }
+      textarea{
+        margin-top: 2rem;
+        height: 10rem;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: var(--color-2);
+        color: var(--color);
+        font-size:1.2rem;
+        font-weight:600;
+      }
+      textarea::placeholder{
+        color: var(--color-1);
+        text-align: start;
+        padding: 6px;
+        font-size:1.1rem;
+        font-weight: 900;
+      }
+    
+      button{
+        margin-top: 1rem;
+        height: 35px;
+        width: 100%;
+        outline: none;
+        border: none;
+        background-color: var(--color-2);
+        color: var(--color);
+        font-size:1.3rem;
+        font-weight:700;
+      }
+      .social-contact{
+        margin-top:3vh;
+        height: 17rem;
+        width: 90%;
+        background-color:rgba(54, 52, 52, 0.6);
+        padding: 1rem;
+        border-radius: 15px 15px 0px 0px;
+
+      }
+      .social-contact .number{
+        color: var(--color);
+      }
+      .number h1{
+        /* text-align: center; */
+        font-size: 2rem;
+        font-weight: 900;
+        text-decoration: var(--color-2) underline;
+      }
+      .number p{
+        text-align: center;
+        font-size: 1.4rem;
+        font-weight: 900;
+        padding-top: 0.4rem;
+      }
+      .social-contact .social-media{
+        color: var(--color);
+      }
+      .social-contact .social-media h1{
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 900;
+        text-transform: capitalize;
+      }
+      .social-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+      }
+      .social-contact .social-media a{
+        text-decoration: none;
+        color: var(--color-1);
+        font-size: 1.1rem;
+        font-weight: 900;
+        padding: 0.5rem;
+        transition: all 0.4s;
+      }.social-contact .social-media a:hover{
+        color: var(--color-2);
+        transform: translateY(4px);
+      }
+      .deco{
+        display: none;
+      }
+  }
+  @media screen and (max-width:360px) {
+    .social-contact{
+      margin-top:3vh;
+      height: 19rem;
+      width: 90%;
+      background-color:rgba(54, 52, 52, 0.6);
+      padding: 1rem;
+      border-radius: 15px 15px 0px 0px;
+
+    }
+  }

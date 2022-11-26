@@ -1,0 +1,151 @@
+/************************** About Me ******************************/
+:root{
+    --background-color:#f3eaea;
+    --color-1: #111111;
+    --color-2: rgba(0,0,0,0.9);
+    --color-3: rgb(131, 7, 44);
+}
+.about{
+    padding: 0px 0px;
+    background-color:var(--background-color);
+    color: var(--color-1);
+}
+.about-header{
+    padding-top: 5rem;
+    width: 100%;
+}
+.about-header h1{
+    text-align: center;
+    font-size:2.4rem;
+    text-transform: capitalize;
+}
+.image-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow:row wrap;
+    width: 100%;
+}
+.image-content > .about-content > h1{
+    text-align: center;
+    font-size: 2.4rem;
+    text-decoration: 3px var(--color-3) underline;
+}
+.image-content > .about-content > p.intro,p.fact,.hobby{
+    text-indent:2rem;
+}
+.image{
+    position: relative;
+}
+.image img{
+    width: 400px;
+    border-radius:0px 50px;
+}
+.skills-experience{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color:var(--color-3);
+    padding:1rem 2rem 2rem;
+}
+@media screen and (min-width:1000px) {
+    .image-content > .about-content{
+        margin-top: 5rem;
+    }
+    .skills-experience{
+        margin-top:8rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+        background-color:var(--color-3);
+        padding:1rem;
+    }
+}
+@media screen and (max-width:680px) {
+    .about{
+        background-color:var(--background-color);
+        color: var(--color-1);
+    }
+    .about-header{
+        padding-top: 5rem;
+        width: 100%;
+    }
+    .about-header h1{
+        text-align: center;
+        font-size:2.4rem;
+        text-transform: capitalize;
+    }
+    .image-content{
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow:row wrap;
+        width: 100%;
+    }
+    .image-content > .about-content > h1{
+        text-align: center;
+        font-size: 2.4rem;
+        text-decoration: 3px var(--color-3) underline;
+    }
+    .image-content > .about-content > p.intro,p.fact,.hobby{
+        text-indent:2rem;
+    }
+    .image{
+        position: relative;
+    }
+    .image img{
+        width: 400px;
+        border-radius:0px 50px;
+    }
+    .image p.p1{
+        width:80px;
+        height: 3px;
+        background-color: var(--color-3);
+    }
+    .image p.p1::after{
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width:3px;
+        height: 80px;
+        background-color: var(--color-3);
+    }
+    .image p.p2{
+        width:80px;
+        height: 3px;
+        background-color: var(--color-3);
+        position: absolute;
+        bottom: 9px;
+        right: 0px;
+    }
+    .image p.p2::after{
+        content: '';
+        width:3px;
+        height: 80px;
+        background-color: var(--color-3);
+        position: absolute;
+        bottom: 0px;
+        right: -2px;
+    }
+    .skills-experience{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background-color:var(--color-3);
+        padding:2rem 2rem 2rem;
+    }
+    .skills-experience h2{
+        text-decoration: 3px var(--color-1) underline;
+    }
+    .skills-experience ul li{
+        list-style: none;
+        padding-top: 0.4rem;
+    }
+    
+}
